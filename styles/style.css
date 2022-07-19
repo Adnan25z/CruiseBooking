@@ -1,0 +1,603 @@
+/*
+filename: style.css
+author: Adnan Zafar
+created: 14/03/2021
+last modified: 20/03/2021
+description: assign 2 css file
+*/
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+h1.prod_head {
+  /*using shorthand notation for heading in product section*/
+  font: 700 2.5rem "Montserrat", sans-serif;
+}
+
+ol {
+  text-align: left;
+}
+
+ul {
+  text-align: left;
+}
+
+p {
+  color: #222831;
+}
+
+hr {
+  border: dotted #a3d8f4 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 20px auto;
+}
+
+aside {
+  width: 25%;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  padding-right: 10px;
+  float: right;
+  font-style: normal;
+  background-color: lightblue;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #28527a;
+  text-align: center;
+  padding: 8px;
+}
+
+th {
+  color: #e7e6e1;
+  background-color: #276678;
+}
+
+/*images*/
+#title_img {
+  padding: 3% 4% 4%;
+  text-align: left;
+}
+
+@media (max-width: 1024px) {
+
+  /*Changing the layout of elements at screen size 1024px using @media*/
+  #title {
+    text-align: center;
+  }
+
+  aside {
+    font-size: 0.85rem;
+  }
+
+  aside h3 {
+    font-size: 0.95rem;
+  }
+
+  aside h4 {
+    font-size: 0.8rem;
+  }
+}
+
+/* Headings */
+.big-heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  color: #e7e6e1;
+}
+
+.sub-heading {
+  color: #e7e6e1;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/*Navigation*/
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 8px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.btn-info {
+  margin: 0% 10% 18% 4%;
+  /*adding margin to button*/
+}
+
+/*features*/
+.feature-text {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 5%;
+}
+
+.icons {
+  color: #28527a;
+  margin-bottom: 1rem;
+}
+
+.icons:hover {
+  color: #276678;
+}
+
+/* Testimonials Section */
+#testimonials {
+  background-color: #28527a;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-img {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+/*cruise location*/
+.cruise_loc {
+  height: 5%;
+  width: 15%;
+  float: left;
+  margin-right: 30px;
+}
+
+.C-loc {
+  text-align: left;
+}
+
+.ships {
+  height: 100%;
+  width: 100%;
+}
+
+/*cruise display*/
+.card-text {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.card-desc {
+  color: #28527a;
+}
+
+/*sections*/
+.colored-section {
+  background-color: #28527a;
+  color: #e7e6e1;
+  padding: 3% 4% 4%;
+}
+
+.white-section {
+  background-color: #eff7e1;
+  padding: 3% 4% 4%;
+}
+
+.bg-image {
+  /*adding background image to index page*/
+  background-image: url('images/bg2jpg.jpg');
+  background-color: #28527a;
+  background-repeat: no-repeat;
+  height: 75vh;
+  background-size: cover;
+  padding: 3% 4% 4%;
+}
+
+/*footer*/
+.footer-img {
+  margin: 20px 10px;
+}
+
+.parahighlight {
+  color: #a3d8f4;
+}
+
+/*Enquiry Form*/
+.formpage {
+  text-align: left;
+  border-radius: 5px;
+  background-color: #28527a;
+  padding: 20px;
+}
+
+.formimg {
+  padding: 12% 10% 20% 8%;
+  width: 90%;
+  height: 57%;
+}
+
+input[type=email], textarea {
+  /*styling the email input field*/
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
+input[type=number], input[type=text], select {
+  /*Styling the input types to have 2 input fields in one row*/
+  width: 32%;
+  padding: 12px;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
+input[type=radio], input[type=checkbox] {
+  width: 10%;
+}
+
+legend {
+  padding-top: 4%;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: #f2f2f2;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#book, #days, #books {
+  width: 100%;
+}
+
+input[type=submit]:hover {
+  /*changing color when hovering*/
+  background-color: #45a049;
+}
+
+/*Enwuiry page end*/
+/*about me page*/
+dt {
+  /*To allign the definition list in one line*/
+  float: left;
+  clear: left;
+  width: 110px;
+  font-weight: bold;
+  color: #28527a;
+}
+
+dt::after {
+  content: ":";
+}
+
+dd {
+  margin: 0 0 0 80px;
+  padding: 0 0 1em 0;
+}
+
+.mypic {
+  /*floating the pic to the right and adding round borders using border radius*/
+  float: right;
+  border-style: double;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+/*timetable*/
+#tt table {
+  /*Using border-collapse to have single lines surrounding table*/
+  border-collapse: separate;
+  text-align: center;
+}
+
+#tt th {
+  /*Styling table head*/
+  height: 4rem;
+  width: 8rem;
+  text-align: center;
+}
+
+#tt td {
+  height: 3rem;
+  /*Adjusting height according to font size*/
+}
+
+.rowhead {
+  background-color: #276678;
+  /*column and row headings*/
+  color: #f2f2f2;
+}
+
+.web {
+  background-color: #f39189;
+  /*Giving background colours to particular cells*/
+}
+
+.prog {
+  background-color: #9a8194;
+  /*Giving background colours to particular cells*/
+}
+
+.cle {
+  background-color: #70af85;
+  /*Giving background colours to particular cells*/
+}
+
+.tne {
+  background-color: #e5df88;
+  /*Giving background colours to particular cells*/
+}
+
+/*enhancements*/
+.penhance {
+  text-align: left;
+}
+
+/*STARTING ASSIGNMENT 2 WORK HERE*/
+/*PAYMENT PAGE*/
+.pays {
+  background: #2196f3;
+  margin: 0 10px;
+}
+
+.payment {
+  background: #f8f8f8;
+  max-width: 500px;
+  margin: 80px auto;
+  height: auto;
+  padding: 35px;
+  padding-top: 70px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.payment h2 {
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  color: #0d3c64;
+}
+
+.form .label {
+  text-align: left;      /*formatting the labels and inputs*/
+  display: block;
+  color: #555555;
+  margin-bottom: 6px;
+}
+
+.form .input {
+  padding: 13px 0 13px 25px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-wrap: 3px;
+  outline: none;
+  font-size: 16px;
+  color: #555555;
+}
+
+#expiryy, #expirym {              /*styling the input fields for month and year*/
+  margin-top: 35px;
+  padding: 13px 0 13px 25px;
+  width: 80%;
+  height: 55%;
+  text-align: center;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-wrap: 3px;
+  outline: none;
+  font-size: 16px;
+  color: #555555;
+}
+
+.col-form-label-lg {           /*heading size increase and giving margin on top*/
+  margin-top: 10%;
+  font-size: 2rem;
+}
+
+.card-grp {                         /*stling the paymeny fields*/
+  display: flex;
+  justify-content: space-between;
+}
+
+.grp {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card-item {
+  width: 33%;          /*adjusting the width of cvv and expiry month and year fields*/
+}
+
+.space {                /*Adding space between the input fields*/
+  background: #f8f8f8;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.icon-relative {
+  position: relative;
+}
+
+.icon-relative .fas,
+.icon-relative .far {         /*positioning the icons next to the input fields*/
+  position: absolute;
+  bottom: 35px;
+  left: 15px;
+  font-size: 20px;
+  color: #555555;
+}
+
+#btns {                     /*styling the checkout button*/
+  margin-top: 40px;
+  background: #28527a;
+  padding: 12px 50px;
+  text-align: center;
+  color: #f8f8f8;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#btns1 {                   /*Styling the reset button*/
+  margin-top: 40px;
+  background: #aa2b1d;
+  padding: 12px 50px;
+  text-align: center;
+  color: #f8f8f8;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#totalCost {            /*styling the field*/
+  width: 100%;
+}
+
+.payment-logo {
+  position: absolute;
+  top: -50px;
+  left: 48%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background: #f8f8f8;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  line-height: 105px;
+}
+
+.payment-logo:before {    /*Trying to the C in the middle and create a cirle right on top of payment gateway*/
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 90px;
+  height: 90px;
+  background: #28527a;
+  border-radius: 50%;
+}
+
+.payment-logo p {
+  color: #f8f8f8;            /*Styling the C in the logo*/
+  position: relative;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 58px;
+}
+
+.icon-container {
+  margin-bottom: 20px;   /*styling the card images using containers and padding*/
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.fa-cc-visa {         /*adding color to the card images*/
+  color: navy;
+}
+
+.fa-cc-amex {         /*adding color to the card images*/
+  color: blue;
+}
+
+.fa-cc-mastercard {    /*adding color to the card images*/
+  color: red;
+}
+
+.labelexc {
+  text-align: center;
+  color: #555555;
+}
+
+#first-name, #last-name, #email, #full-address, #phone, #enq, #books, #days {
+  display: inline-block;
+  padding: 8px 0 8px 13px;          /*adding input fields like look here using various css styles*/
+  width: 100%;
+  text-align: left;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-wrap: 3px;
+  outline: none;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  color: #555555
+}
+
+.hide {
+  color: #f2f2f2;                 /*changing the colour of the paragraph texts on payment page*/
+  padding-bottom: 1%;
+}
+
+.readonly, #readonly1, #readonly2, #readonly3, #readonly4, #readonly5, #readonly6 {
+  pointer-events: none;                 /*for read only data pointer does not work*/
+}
+
+.shop-item {
+  margin: 30px;
+}
+
+.shop-item-title {
+  display: block;                    /*Adding titles to each image and also creating the layout*/
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #a3d8f4;
+  margin-bottom: 15px;
+}
+
+.shop-item-image {
+  height: 180px;                  /*adding height attribute to the images*/
+}
+
+.shop-items {                          /*Styling the images and their texts on the enquiry page*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#fn, #ln, #street_addres, #sub, #postcod{
+  display: inline-block;
+  padding: 5px 0 5px 13px;          /*adding input fields like look here using various css styles*/
+  width: 100%;
+  text-align: left;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-wrap: 3px;
+  outline: none;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  color: #555555
+}
