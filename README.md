@@ -2,6 +2,7 @@
 
 ## Introduction
 CruiseEase is a web-based application developed using PHP, JavaScript, HTML, and CSS. The application is designed to facilitate the booking and management of cruise packages. It includes features such as user registration, booking management, and payment processing, providing a comprehensive solution for cruise booking needs.
+![Website Image](images/cruise.gif)
 
 ## Table of Contents
 
